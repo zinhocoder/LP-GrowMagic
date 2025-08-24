@@ -141,3 +141,32 @@
 .animate-scroll:hover {
   animation-play-state: paused;
 }
+
+/* Melhorias para mobile */
+@media (max-width: 640px) {
+  /* Ajustar espaçamento de botões para touch */
+  button {
+    min-height: 44px;
+  }
+  
+  /* Melhorar legibilidade em telas pequenas */
+  .text-sm {
+    line-height: 1.5;
+  }
+  
+  /* Otimizar espaçamento em cards */
+  .card {
+    margin-bottom: 1rem;
+  }
+  
+  /* Melhorar navegação por scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Ajustar tamanho mínimo de elementos clicáveis */
+  a, button, [role="button"] {
+    min-width: 44px;
+    min-height: 44px;
+  }
+}
