@@ -8,7 +8,7 @@ import { useState } from "react"
 
 export default function MagiaGrowLanding() {
   const [openFaq, setOpenFaq] = useState<number | null>(null)
-  const [selectedImage, setSelectedImage] = useState("/images/magia-grow-hero-new.png")
+  const [selectedImage, setSelectedImage] = useState("/images/magia1.jpg")
 
   const toggleFaq = (index: number) => {
     setOpenFaq(openFaq === index ? null : index)
@@ -65,7 +65,7 @@ export default function MagiaGrowLanding() {
                 <div className="flex items-center space-x-3">
                   <span className="text-xl sm:text-2xl">🔥</span>
                   <p className="text-base sm:text-lg font-semibold text-gray-800">
-                    Mais de <strong className="text-rose-700">47.000 mulheres</strong> já recuperaram a autoestima
+                    Mais de <strong className="text-rose-700">10.000 homens e mulheres</strong> já recuperaram a autoestima
                   </p>
                 </div>
               </div>
@@ -121,7 +121,7 @@ export default function MagiaGrowLanding() {
             <div className="relative flex justify-center order-first lg:order-last">
               <div className="relative">
                 <img
-                  src="/images/magia-grow-no-bg.png"
+                  src="/images/magia1.jpg"
                   alt="Magia Grow - Suplemento Capilar"
                   className="w-full max-w-sm sm:max-w-lg drop-shadow-2xl"
                 />
@@ -196,6 +196,7 @@ export default function MagiaGrowLanding() {
           </div>
           <Button
             size="lg"
+            onClick={() => document.getElementById("ofertas")?.scrollIntoView({ behavior: "smooth" })}
             className="bg-amber-400 hover:bg-amber-500 text-gray-900 px-6 sm:px-12 py-4 sm:py-6 text-lg sm:text-xl font-bold shadow-2xl hover:shadow-3xl transition-all duration-300"
           >
             <span className="hidden sm:inline">GARANTIR MEU DESCONTO AGORA</span>
@@ -269,15 +270,15 @@ export default function MagiaGrowLanding() {
           </div>
 
           <div className="text-center">
-            <Button
-              size="lg"
-              onClick={() => document.getElementById("ofertas")?.scrollIntoView({ behavior: "smooth" })}
-              className="bg-rose-600 hover:bg-rose-700 text-white px-6 sm:px-12 py-4 sm:py-6 text-lg sm:text-xl font-bold shadow-xl hover:shadow-2xl transition-all duration-300"
-            >
-              <span className="hidden sm:inline">EXPERIMENTAR MAGIA GROW AGORA</span>
-              <span className="sm:hidden">EXPERIMENTAR AGORA</span>
-              <ArrowRight className="ml-2 sm:ml-3 h-5 w-5 sm:h-6 sm:w-6" />
-            </Button>
+                      <Button
+            size="lg"
+            onClick={() => document.getElementById("ofertas")?.scrollIntoView({ behavior: "smooth" })}
+            className="bg-rose-600 hover:bg-rose-700 text-white px-6 sm:px-12 py-4 sm:py-6 text-lg sm:text-xl font-bold shadow-xl hover:shadow-2xl transition-all duration-300"
+          >
+            <span className="hidden sm:inline">EXPERIMENTAR MAGIA GROW AGORA</span>
+            <span className="sm:hidden">EXPERIMENTAR AGORA</span>
+            <ArrowRight className="ml-2 sm:ml-3 h-5 w-5 sm:h-6 sm:w-6" />
+          </Button>
           </div>
         </div>
       </section>
@@ -329,14 +330,15 @@ export default function MagiaGrowLanding() {
           </div>
 
           <div className="text-center">
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-rose-600 to-rose-700 hover:from-rose-700 hover:to-rose-800 text-white px-6 sm:px-12 py-4 sm:py-6 text-base sm:text-lg font-bold shadow-xl hover:shadow-2xl transition-all duration-300"
-            >
-              <span className="hidden sm:inline">QUERO MINHA TRANSFORMAÇÃO TAMBÉM</span>
-              <span className="sm:hidden">QUERO MINHA TRANSFORMAÇÃO</span>
-              <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
-            </Button>
+                      <Button
+            size="lg"
+            onClick={() => document.getElementById("ofertas")?.scrollIntoView({ behavior: "smooth" })}
+            className="bg-gradient-to-r from-rose-600 to-rose-700 hover:from-rose-700 hover:to-rose-800 text-white px-6 sm:px-12 py-4 sm:py-6 text-base sm:text-lg font-bold shadow-xl hover:shadow-2xl transition-all duration-300"
+          >
+            <span className="hidden sm:inline">QUERO MINHA TRANSFORMAÇÃO TAMBÉM</span>
+            <span className="sm:hidden">QUERO MINHA TRANSFORMAÇÃO</span>
+            <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+          </Button>
           </div>
         </div>
       </section>
@@ -685,14 +687,15 @@ export default function MagiaGrowLanding() {
           </div>
 
           <div className="text-center">
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-rose-600 to-rose-700 hover:from-rose-700 hover:to-rose-800 text-white px-6 sm:px-12 py-4 sm:py-6 text-base sm:text-lg font-bold shadow-xl hover:shadow-2xl transition-all duration-300"
-            >
-              <span className="hidden sm:inline">JUNTAR-SE ÀS CLIENTES SATISFEITAS</span>
-              <span className="sm:hidden">JUNTAR-SE ÀS CLIENTES</span>
-              <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
-            </Button>
+                      <Button
+            size="lg"
+            onClick={() => document.getElementById("ofertas")?.scrollIntoView({ behavior: "smooth" })}
+            className="bg-gradient-to-r from-rose-600 to-rose-700 hover:from-rose-700 hover:to-rose-800 text-white px-6 sm:px-12 py-4 sm:py-6 text-base sm:text-lg font-bold shadow-xl hover:shadow-2xl transition-all duration-300"
+          >
+            <span className="hidden sm:inline">JUNTAR-SE ÀS CLIENTES SATISFEITAS</span>
+            <span className="sm:hidden">JUNTAR-SE ÀS CLIENTES</span>
+            <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+          </Button>
           </div>
         </div>
       </section>
@@ -723,16 +726,16 @@ export default function MagiaGrowLanding() {
                 <div className="flex gap-2 sm:gap-3 justify-center">
                   <div
                     className={`w-16 h-16 sm:w-20 sm:h-20 bg-white rounded-lg p-1 sm:p-2 border-2 cursor-pointer transition-colors ${
-                      selectedImage === "/images/magia-grow-hero-new.png"
+                      selectedImage === "/images/magia1.jpg"
                         ? "border-rose-500"
                         : "border-gray-200 hover:border-rose-300"
                     }`}
-                    onClick={() => setSelectedImage("/images/magia-grow-hero-new.png")}
+                    onClick={() => setSelectedImage("/images/magia1.jpg")}
                   >
                     <img
-                      src="/images/magia-grow-hero-new.png"
+                      src="/images/magia1.jpg"
                       alt="Magia Grow"
-                      className="w-full h-full object-contain"
+                      className="w-full h-full object-cover rounded"
                     />
                   </div>
                   <div
@@ -815,7 +818,10 @@ export default function MagiaGrowLanding() {
                         <div className="font-bold text-lg sm:text-xl">1 MÊS</div>
                         <div className="text-rose-200 text-sm sm:text-lg">1 por R$ 139,90 cada</div>
                       </div>
-                      <Button className="bg-green-500 hover:bg-green-600 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full font-bold text-sm sm:text-lg self-start sm:self-auto">
+                      <Button 
+                        onClick={() => window.open('https://payt.site/YQ5CVoJ', '_blank')}
+                        className="bg-green-500 hover:bg-green-600 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full font-bold text-sm sm:text-lg self-start sm:self-auto"
+                      >
                         ADICIONAR
                       </Button>
                     </div>
@@ -826,7 +832,10 @@ export default function MagiaGrowLanding() {
                         <div className="font-bold text-lg sm:text-xl">3 MESES COM 7% OFF</div>
                         <div className="text-rose-200 text-sm sm:text-lg">3 por R$ 130,11 cada</div>
                       </div>
-                      <Button className="bg-green-500 hover:bg-green-600 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full font-bold text-sm sm:text-lg self-start sm:self-auto">
+                      <Button 
+                        onClick={() => window.open('https://payt.site/YR5C4bB', '_blank')}
+                        className="bg-green-500 hover:bg-green-600 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full font-bold text-sm sm:text-lg self-start sm:self-auto"
+                      >
                         ADICIONAR
                       </Button>
                     </div>
@@ -837,7 +846,10 @@ export default function MagiaGrowLanding() {
                         <div className="font-bold text-lg sm:text-xl">6 MESES COM 10% OFF</div>
                         <div className="text-rose-200 text-sm sm:text-lg">6 por R$ 125,91 cada</div>
                       </div>
-                      <Button className="bg-green-500 hover:bg-green-600 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full font-bold text-sm sm:text-lg self-start sm:self-auto">
+                      <Button 
+                        onClick={() => window.open('https://payt.site/j4pCqJE', '_blank')}
+                        className="bg-green-500 hover:bg-green-600 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full font-bold text-sm sm:text-lg self-start sm:self-auto"
+                      >
                         ADICIONAR
                       </Button>
                     </div>
@@ -845,7 +857,10 @@ export default function MagiaGrowLanding() {
                 </div>
 
                 {/* Buy Button */}
-                <Button className="w-full bg-green-500 hover:bg-green-600 text-white py-4 sm:py-6 text-xl sm:text-2xl font-bold rounded-full h-16 sm:h-20 mb-6 sm:mb-8">
+                <Button 
+                  onClick={() => document.getElementById("ofertas")?.scrollIntoView({ behavior: "smooth" })}
+                  className="w-full bg-green-500 hover:bg-green-600 text-white py-4 sm:py-6 text-xl sm:text-2xl font-bold rounded-full h-16 sm:h-20 mb-6 sm:mb-8"
+                >
                   COMPRAR
                 </Button>
 
@@ -978,7 +993,7 @@ export default function MagiaGrowLanding() {
                 <Users className="h-6 w-6 sm:h-8 sm:w-8 text-amber-300" />
                 <span className="text-3xl sm:text-4xl font-bold text-amber-300">10.000+</span>
               </div>
-              <p className="text-base sm:text-lg">Clientes Satisfeitas</p>
+              <p className="text-base sm:text-lg">Clientes Satisfeitos</p>
             </div>
             <div>
               <div className="flex items-center justify-center gap-2 mb-2">
